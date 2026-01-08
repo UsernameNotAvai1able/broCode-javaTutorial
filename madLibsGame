@@ -1,0 +1,35 @@
+//while this is just a copy of the project in the video. I am keeping these mostly to refer to them in the future, if I forget finer details of using java.
+//chapter 4 of the 12 hour video. the previous 3 are mostly for introducing you to the concepts of things like variables and scanners. this is the first project building on those concepts
+//feel free to reach out with questions/comments
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+
+        Scanner scanner = new Scanner(System.in);
+
+        String adjective1; //describes something
+        String noun1; //person, place, or thing
+        String adjective2;
+        String verb1; //any action
+        String adjective3;
+
+        System.out.print("Enter an adjective (description): ");
+        adjective1 = scanner.nextLine();
+        System.out.print("Enter a noun (animal or person): ");
+        noun1 = scanner.nextLine();
+        System.out.print("Enter another adjective (description): ");
+        adjective2 = scanner.nextLine();
+        System.out.print("Enter a verb (ending with -ing): ");
+        verb1 = scanner.nextLine();
+        System.out.print("Enter another adjective (description): ");
+        adjective3 = scanner.nextLine();
+
+        System.out.println("\nToday I went to a " + adjective1 + " zoo");
+        System.out.println("In an exhibit I saw a " + noun1 + ".");
+        System.out.println(noun1 + " was " + adjective2 + " and " + verb1 + "!");
+        System.out.println("I was " + adjective3 +  "!");
+
+        scanner.close(); //good practice to close your scanners
+    }
+}
